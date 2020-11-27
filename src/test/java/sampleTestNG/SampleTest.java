@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class SampleTest {
 
 	public String baseUrl = "http://demo.guru99.com/test/newtours/";
-	String driverPath = "C:\\Users\\14012\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe";
+	String driverPath = "C:\\Users\\14012\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe";
 	public WebDriver driver;
 
 	@Test
