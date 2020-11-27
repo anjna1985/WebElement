@@ -4,7 +4,9 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -30,5 +32,10 @@ public class SampleTest {
 		AssertJUnit.assertEquals(actualTitle, expectedTitle);
 		//driver.close();
 	}
-
+	@Test
+	public void verifylink() {
+		System.out.println("Check link on page");
+		WebElement link=driver.findElement(By.xpath("//a[contains(text(),'REGISTER')]"));
+		Assert.assertTrue(link.isDisplayed());
+	}
 }
