@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-27T06:23:28 EST" name="Suite" finished-at="2020-11-27T06:23:37 EST" duration-ms="8710">
+  <suite started-at="2020-11-27T09:45:34 EST" name="Suite" finished-at="2020-11-27T09:45:42 EST" duration-ms="7790">
     <groups>
     </groups>
-    <test started-at="2020-11-27T06:23:28 EST" name="Test" finished-at="2020-11-27T06:23:37 EST" duration-ms="8710">
-      <class name="sampleTestNG.SampleTestNG">
-        <test-method signature="verifyHomepageTitle()[pri:0, instance:sampleTestNG.SampleTestNG@647fd8ce]" started-at="2020-11-27T06:23:28 EST" name="verifyHomepageTitle" finished-at="2020-11-27T06:23:37 EST" duration-ms="8666" status="PASS">
+    <test started-at="2020-11-27T09:45:34 EST" name="Test" finished-at="2020-11-27T09:45:42 EST" duration-ms="7790">
+      <class name="sampleTestNG.SampleTest">
+        <test-method signature="verifyHomepageTitle()[pri:0, instance:sampleTestNG.SampleTest@647fd8ce]" started-at="2020-11-27T09:45:34 EST" name="verifyHomepageTitle" finished-at="2020-11-27T09:45:42 EST" duration-ms="7740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomepageTitle -->
-      </class> <!-- sampleTestNG.SampleTestNG -->
+      </class> <!-- sampleTestNG.SampleTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
