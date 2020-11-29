@@ -14,14 +14,13 @@ import org.testng.Assert;
 public class SampleTest {
 	
 	public String baseUrl = "http://demo.guru99.com/test/newtours/";
-	String driverPath = "C:\\Users\\14012\\Downloads\\chromedriver_win32\\chromedriver.exe";
 	WebDriver driver=null;
     
 	@Test
 	public void verifyHomepageTitle() {
 
 		System.out.println("launching chrome browser");
-		System.setProperty("webdriver.chrome.driver",driverPath);
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"src\\main\\resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
