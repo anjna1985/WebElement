@@ -1,22 +1,22 @@
 package sampleTestNG;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterTest;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class SampleTest {
-
+	
 	public String baseUrl = "http://demo.guru99.com/test/newtours/";
-	String driverPath = "C:\\Users\\14012\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe";
-	public WebDriver driver;
-
+	String driverPath = "C:\\Users\\14012\\Downloads\\chromedriver_win32\\chromedriver.exe";
+	WebDriver driver=null;
+    
 	@Test
 	public void verifyHomepageTitle() {
 
@@ -36,6 +36,14 @@ public class SampleTest {
 	public void verifylink() {
 		System.out.println("Check link on page");
 		WebElement link=driver.findElement(By.xpath("//a[contains(text(),'REGISTER')]"));
-		Assert.assertTrue(link.isDisplayed());
+		Assert.assertTrue(link.isDisplayed(), "Image is displaying");
 	}
+	
+	@AfterMethod
+	@AfterTest
+	public void tearDown() {
+		System.out.println("Closing Browser...!!!");
+		//driver.quit();
+	}
+	
 }
