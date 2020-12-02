@@ -19,7 +19,7 @@ public class SampleTest {
 	@Test
 	public void verifyHomepageTitle() {
 
-		System.out.println("launching chrome browser");
+		System.out.println("launching chrome browser..........");
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
